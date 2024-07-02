@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.SignUpPage"
+             >
+    <VerticalStackLayout>
+        <Label
+            Text="Enter yout username"
+            FontSize="34"
+            Margin="470,80,20,0"
+            />
+        <Entry
+            x:Name="NameEntry"
+            Margin="470,20,500,0"
+            />
+        <Label
+            Text="Enter your email"
+            FontSize="34"
+            Margin="470,80,20,0"
+            />
+        <Entry
+            x:Name="EmailEntry"
+            Margin="470,20,500,0"
+            />
+        <Label
+            Text="Enter your password"
+            FontSize="34"
+            Margin="470,80,20,0"
+            />
+        <Entry
+            x:Name="PasswordEntry"
+            IsPassword="True"
+            Margin="470,20,500,0"
+            
+            />
+        <HorizontalStackLayout
+            HeightRequest="170"
+            Padding="0,0,0,20"
+            Spacing="50">
+            <Button
+                Text="Cancel"
+                FontSize="24"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                Margin="470,50,0,40"
+                Clicked="ToHomePage"
+                />
+            <Button
+                Text="Sign Up"
+                Clicked="SignUp"
+                FontSize="24"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                Margin="70,50,0,40"
+                />
+            </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
