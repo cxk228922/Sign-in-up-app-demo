@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+    <Grid>
+        <Image Source="ciallo.png"
+               HorizontalOptions="Start"
+               VerticalOptions="End"
+               HeightRequest="423"
+               WidthRequest="530"
+               Aspect="Fill"
+               IsVisible="True"
+               Opacity="0.7"/>
+        <ScrollView>
+        <VerticalStackLayout
+            Padding="0,0"
+            Spacing="0">
+            <Label
+                Text="Login"
+                FontSize="44"
+                TextColor="#007AFF"
+                Margin="660,60,20,0"
+                />
+            <HorizontalStackLayout
+                HeightRequest="200"
+              Padding="0,0,0,10"
+              Spacing="20">
+                <Image
+                    Source="account.png"
+                    WidthRequest="90"   
+                    HeightRequest="90"
+                    Margin="550,40,0,0" 
+                    />
+                <Entry
+                Placeholder="Account"
+                x:Name="account"
+                Margin="20,40,0,0"
+                WidthRequest="210"
+                HeightRequest="50"/>
+
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                HeightRequest="170"
+                Padding="0,0,0,20"
+                Spacing="20">
+                <Image
+                    Source="password.png"
+                    WidthRequest="110"
+                    HeightRequest="110"
+                    Margin="538,0,0,0"
+                    />
+                <Entry
+                x:Name="pass"
+                Placeholder="Password"
+                Margin="15,0,0,0"
+                WidthRequest="210"
+                HeightRequest="50"
+                IsPassword="True"
+                    />
+                <Label Text="Forgot Password"
+               FontSize="16"
+               TextColor="White"
+               Margin="5,30,0,0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextDecorations="Underline">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="forGotPassword"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </HorizontalStackLayout>
+            <Button
+                Clicked="Login"
+                Text="Login"
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                Margin="20,0,20,0"
+                WidthRequest="180"
+                HeightRequest="50"
+                />
+            <HorizontalStackLayout
+                HeightRequest="170"
+                Padding="0,0,0,20"
+                Spacing="20">
+                <Label
+                    Text="Don't have an account?"
+                    FontSize="16"
+                    TextColor="#007AFF"
+                    Margin="630,40,0,0"
+                    />
+                <Label 
+                    Text="Sign Up"
+                    FontSize="16"
+                    TextColor="White"
+                    Margin="0,39,0,47"
+                    TextDecorations="Underline">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="SignUp"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</Grid>
+</ContentPage>
