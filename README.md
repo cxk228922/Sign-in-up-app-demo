@@ -5,6 +5,7 @@
 Discord：arc_testify<br>
 email：s1206105@taivs.tp.edu.tw<br>
 > 我沒有要繼續維護本專案的意思，所以有任何改進建議都不要找我<br>
+
 上課說明用簡報:https://www.canva.com/design/DAGHogCt9Kw/T84Yj8LsW8IHc1S1JUs3eQ/edit
 ### 環境設定
 此程式為基於C#編寫的.NET Maui App，並使用Visual studio 作為開發環境<br>
