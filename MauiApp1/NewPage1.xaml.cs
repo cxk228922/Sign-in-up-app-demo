@@ -12,7 +12,7 @@ public partial class NewPage1 : ContentPage
     public NewPage1()
     {
         InitializeComponent();
-        _emailService = new EmailService("smtp.gmail.com", 587, "ben042708@gmail.com", "g v h u nov u x v q w e o y h");
+        _emailService = new EmailService("smtp.gmail.com", 587, "your email", "Your Password");
     }
 
     public void ToHomePage(object sender, EventArgs e)
